@@ -575,84 +575,94 @@ const App = () => {
         </section>
 
         {/* Services Section */}
-        <section id="services" className={`mb-16 p-8 rounded-2xl shadow-xl border ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'}`}>
-          <h2 className={`text-3xl md:text-4xl font-bold text-center mb-10 ${isDarkMode ? 'text-indigo-400' : 'text-indigo-800'}`}>Our Services</h2>
-          <p className={`text-lg text-center max-w-3xl mx-auto mb-12 ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>
-            Neeraj Kumar offers a diverse range of specialized services designed to empower individuals and organizations in their professional and personal development journey.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service Card: Life Coaching */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Life Coaching</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Unlock your personal potential and achieve your life goals with personalized guidance and strategic action plans.
-              </p>
-            </div>
-            {/* Service Card: Interview Preparation */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Interview Preparation</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Master interview techniques, build confidence, and learn strategies to ace your next job interview.
-              </p>
-            </div>
-            {/* Service Card: Public Speaking */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Public Speaking</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Develop compelling presentation skills, overcome stage fright, and deliver impactful speeches with authority.
-              </p>
-            </div>
-            {/* Service Card: Resume Writing */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Resume Writing</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Craft a professional and impactful resume that highlights your strengths and gets you noticed by top employers.
-              </p>
-            </div>
-            {/* Service Card: Digital Marketing */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Digital Marketing Consulting</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Gain insights and strategies for effective digital presence, personal branding, and online engagement.
-              </p>
-            </div>
-            {/* Service Card: Educational Consulting */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Educational Consulting</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Expert guidance for students and professionals seeking to navigate academic and career paths effectively.
-              </p>
-            </div>
-            {/* Service Card: Leadership Development */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Leadership Development</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Cultivate essential leadership qualities, build high-performing teams, and drive organizational success.
-              </p>
-            </div>
-            {/* Service Card: Resume Review */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Resume Review</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Receive expert feedback and improvements on your resume to maximize your job application success.
-              </p>
-            </div>
-            {/* Service Card: Training (General) */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Professional Training</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Customized training modules covering a wide array of soft skills to enhance individual and team capabilities.
-              </p>
-            </div>
-            {/* Service Card: Career Development Coaching */}
-            <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Career Development Coaching</h3>
-              <p className={`text-gray-700 ${isDarkMode ? 'text-gray-200' : ''}`}>
-                Strategize your career path, identify growth opportunities, and build a roadmap for long-term professional success.
-              </p>
-            </div>
-          </div>
-        </section>
+<section id="services" className={`mb-16 p-8 rounded-2xl shadow-xl border ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'}`}>
+  <h2 className={`text-3xl md:text-4xl font-bold text-center mb-10 ${isDarkMode ? 'text-indigo-400' : 'text-indigo-800'}`}>Our Services</h2>
+  <p className={`text-lg text-center max-w-3xl mx-auto mb-12 ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>
+    Neeraj Kumar offers a diverse range of specialized services designed to empower individuals and organizations in their professional and personal development journey.
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {/* Service Card: Life Coaching */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Life Coaching</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Unlock your personal potential and achieve your life goals with personalized guidance and strategic action plans.
+      </p>
+    </div>
+
+    {/* Service Card: Interview Preparation */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Interview Preparation</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Master interview techniques, build confidence, and learn strategies to ace your next job interview.
+      </p>
+    </div>
+
+    {/* Service Card: Public Speaking */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Public Speaking</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Develop compelling presentation skills, overcome stage fright, and deliver impactful speeches with authority.
+      </p>
+    </div>
+
+    {/* Service Card: Resume Writing */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Resume Writing</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Craft a professional and impactful resume that highlights your strengths and gets you noticed by top employers.
+      </p>
+    </div>
+
+    {/* Service Card: Digital Marketing */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Digital Marketing Consulting</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Gain insights and strategies for effective digital presence, personal branding, and online engagement.
+      </p>
+    </div>
+
+    {/* Service Card: Educational Consulting */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Educational Consulting</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Expert guidance for students and professionals seeking to navigate academic and career paths effectively.
+      </p>
+    </div>
+
+    {/* Service Card: Leadership Development */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Leadership Development</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Cultivate essential leadership qualities, build high-performing teams, and drive organizational success.
+      </p>
+    </div>
+
+    {/* Service Card: Resume Review */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Resume Review</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Receive expert feedback and improvements on your resume to maximize your job application success.
+      </p>
+    </div>
+
+    {/* Service Card: Training (General) */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Professional Training</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Customized training modules covering a wide array of soft skills to enhance individual and team capabilities.
+      </p>
+    </div>
+
+    {/* Service Card: Career Development Coaching */}
+    <div className={`p-6 rounded-xl shadow-md border hover:shadow-lg transition duration-300 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-indigo-50 border-indigo-200'}`}>
+      <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-700'}`}>Career Development Coaching</h3>
+      <p className={isDarkMode ? 'text-gray-200' : 'text-gray-700'}>
+        Strategize your career path, identify growth opportunities, and build a roadmap for long-term professional success.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* Workshops/Programs Section */}
         <section id="workshops" className={`mb-16 p-8 rounded-2xl shadow-xl border ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'}`}>
@@ -1208,7 +1218,7 @@ const App = () => {
                 Contact Us to Schedule
               </a>
               <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                Or reach out directly via: <a href="mailto:info@neerajkumar.com" className="underline hover:text-indigo-600">info@neerajkumar.com</a> | <a href="tel:+1234567890" className="underline hover:text-indigo-600">+1 (234) 567-890</a>
+                Or reach out directly via: <a href="mailto:info@neerajkumar.com" className="underline hover:text-indigo-600">info@neerajkumar.com</a> | <a href="tel:+91 72910 41408" className="underline hover:text-indigo-600">+91 72910 41408</a>
               </p>
             </div>
           </div>
