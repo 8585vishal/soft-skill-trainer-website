@@ -969,7 +969,7 @@ const App = () => {
                 </p>
               </div>
               <div className="md:w-1/3 text-center md:text-right">
-                <p className={`font-medium ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>August 10, 2024 | Bengaluru, India</p>
+                <p className={`font-medium ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}></p>
                 <button
                   onClick={() => openInfoModal('In-Person Workshop: Advanced Team Building', 'Registration for this in-person workshop is opening soon! Elevate your team’s collaboration and problem-solving skills.')}
                   className={`mt-3 py-2 px-4 rounded-full transition duration-300 ${isDarkMode ? 'bg-indigo-500 text-white hover:bg-indigo-600' : 'bg-indigo-600 text-white hover:bg-indigo-700'}`}>Register</button>
